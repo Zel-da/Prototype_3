@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
-            playerAnim.SetTrigger("Jump_trip");
+            playerAnim.SetTrigger("Jump_trig");
             dirtparticle.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
